@@ -31,18 +31,16 @@ p{
     border: none;
     width: 30%;
     padding: 2%;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: bold;
 }
 
 .btn-1{
     padding: 2%;
 }
 
-.btn-class{
-    text-decoration: none;
-    color: #fff;
-    font-family: "Montserrat";
-    font-weight: bold;
-}
 
 .btn:hover{
     cursor: pointer;
@@ -50,10 +48,16 @@ p{
 
 @media (max-width: 1028px){
     .btn{
-        background-color:#3D3B40;
-        border-radius: 4px;
-        border: none;
         width: 60%;
-        padding: 2%;
+        padding: 5%;
+    }
+
+    .btn-1{
+        padding: 5%;
+    }
+    
+    
+    .btn:hover{
+        cursor: pointer;
     }
 }
