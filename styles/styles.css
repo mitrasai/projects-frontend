@@ -44,6 +44,8 @@ p{
 
 .btn:hover{
     cursor: pointer;
+    background-color: #C7C8CC;
+    color:#000000;
 }
 
 @media (max-width: 1028px){
@@ -57,7 +59,7 @@ p{
     }
     
     
-    .btn:hover{
+/*     .btn:hover{
         cursor: pointer;
-    }
+    } */
 }
