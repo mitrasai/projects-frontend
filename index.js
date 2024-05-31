@@ -14,7 +14,7 @@ function setLinkedInButtonLink(){
     const linkedInProfileUrl = "https://www.linkedin.com/in/sai-mithra?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app";
 
     linkedinButton.addEventListener("click", () => {
-        window.location.href - linkedInProfileUrl;
+        window.location.href = linkedInProfileUrl;
     });
 }
 
