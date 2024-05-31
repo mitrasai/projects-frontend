@@ -37,3 +37,8 @@ function setInstagramButtonLink(){
         window.location.href = instagramProfileUrl;
     });
 }
+
+document.getElementById("git-btn").addEventListener("click", setGithubButtonLink);
+document.getElementById("linkedin-btn").addEventListener("click", setLinkedInButtonLink);
+document.getElementById("protfolio-btn").addEventListener("click", setProtfolioButtonLink);
+document.getElementById("insta-btn").addEventListener("click", setInstagramButtonLink);
