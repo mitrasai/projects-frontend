@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Deposit Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Fixed Deposit Calculator</h1>
+
+        <div class="members">
+            <label for="principle">Principle Amount:</label>
+            <input type="number" id="principle" placeholder="Enter the principle amount">
+        </div>
+
+        <div class="members">
+            <label for="interest">Interest Rate:</label>
+            <input type="number" id="interest" placeholder="Enter the interest rate in (%)">
+        </div>
+
+        <div class="members">
+            <label for="tenure">Tenure (in years):</label>
+            <input type="number" id="tenure" placeholder="Enter the tenure in years">
+        </div>
+
+        <button id="btn-calculate" class="clear" onclick="calculateMaturityAmount()">Calculate</button>
+        <button id="reset-btn" class="clear" onclick="resetForm()">Reset</button>
+        <p id="result" class="total-value">Maturity Amount</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
