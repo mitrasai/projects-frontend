@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <input class="input" type="text" id="passkey" readonly>
+        <fieldset>
+            <label for="length">
+                Password Length
+                <input type="number" value="6" min="6" max="64" id="pass-length">
+            </label>
+
+            <div class="label-group">
+                <label>
+                    <input type="checkbox" id="lower-case" checked>
+                    Lowercase
+                </label>
+                <label>
+                    <input type="checkbox" id="upper-case" checked>
+                    Uppercase
+                </label>
+            </div>
+
+            <div class="label-group">
+                <label>
+                    <input type="checkbox" id="numbers" checked>
+                    Numbers
+                </label>
+                <label>
+                    <input type="checkbox" id="symbols">
+                    Symbols
+                </label>
+            </div>
+        </fieldset>
+
+        <button type="button" id="generate-key" class="clear">Generate Here!</button>
+    </div>
+
+    <!-- <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password">
+            <input class="input" type="text" id="passkey" readonly>
+        </div>
+        
+
+        <div class="key-option">            
+            <label for="length">Password Length</label>
+            <input type="number" value="8" min="8" max="64" id="pass-length">
+
+            <label for="lowercase">Lowercase</label>
+            <input type="checkbox" id="lower-case" checked>
+
+            <label for="uppercase">Uppercase</label> 
+            <input type="checkbox" id="upper-case" checked>
+            
+            <label for="numbers">Numbers</label>
+            <input type="checkbox" id="numbers" checked> 
+ 
+            <label for="symbols">Symbols</label>
+            <input type="checkbox" id="symbols">
+        </div>
+
+        <button type="button" id="generate-key" class="clear">Generate Here!</button>
+    </div> -->
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
