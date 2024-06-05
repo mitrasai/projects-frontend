@@ -1,4 +1,3 @@
-
 let currentValue = "";
 
 // updating the inputs
