@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Wizard - Calculator</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
@@ -16,32 +16,14 @@
             <button class="btn" onclick="clearValue()">
                 C
             </button>
-            <button class="btn" onclick="appendValue('1')">
-                1
+            <button class="btn" onclick="appendValue('%')">
+                %
             </button>
-            <button class="btn" onclick="appendValue('2')">
-                2
+            <button class="btn" onclick="backSapce('<')">
+                <
             </button>
-            <button class="btn" onclick="appendValue('+')">
-                +
-            </button>
-            <button class="btn" onclick="appendValue('3')">
-                3
-            </button>
-            <button class="btn" onclick="appendValue('4')">
-                4
-            </button>
-            <button class="btn" onclick="appendValue('-')">
-                -
-            </button>
-            <button class="btn" onclick="appendValue('5')">
-                5
-            </button>
-            <button class="btn" onclick="appendValue('6')">
-                6
-            </button>
-            <button class="btn" onclick="appendValue('*')">
-                *
+            <button class="btn" onclick="appendValue('/')">
+                /
             </button>
             <button class="btn" onclick="appendValue('7')">
                 7
@@ -49,23 +31,47 @@
             <button class="btn" onclick="appendValue('8')">
                 8
             </button>
-            <button class="btn" onclick="appendValue('/')">
-                /
-            </button>
             <button class="btn" onclick="appendValue('9')">
                 9
+            </button>
+            <button class="btn" onclick="appendValue('*')">
+                *
+            </button>
+            <button class="btn" onclick="appendValue('4')">
+                4
+            </button>
+            <button class="btn" onclick="appendValue('5')">
+                5
+            </button>
+            <button class="btn" onclick="appendValue('6')">
+                6
+            </button>
+            <button class="btn" onclick="appendValue('-')">
+                -
+            </button>
+            <button class="btn" onclick="appendValue('1')">
+                1
+            </button>
+            <button class="btn" onclick="appendValue('2')">
+                2
+            </button>
+            <button class="btn" onclick="appendValue('3')">
+                3
+            </button>
+            <button class="btn" onclick="appendValue('+')">
+                +
+            </button>
+            <button class="btn" onclick="appendValue('00')">
+                00
             </button>
             <button class="btn" onclick="appendValue('0')">
                 0
             </button>
-            <button class="btn" onclick="evaluateExpression()">
-                =
-            </button>
             <button class="btn" onclick="appendValue('.')">
                 .
             </button>
-            <button class="btn" onclick="backSapce('<')">
-                <
+            <button class="equals-btn" onclick="evaluateExpression()">
+                =
             </button>
         </div>
     </div>
