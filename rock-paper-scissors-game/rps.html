@@ -24,7 +24,18 @@
       <button class="btn" onclick="playRockPaperScissors('scissors')">
         Scissors
       </button>
+
+      <button class="btn" onclick="
+      localStorage.clear();
+      location.reload();">
+        Reset
+      </button>
     </div>
+
+    <h3 id="user-choice"></h3>
+    <h3 id="computer-choice"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
   </div>
   <script src="rps.js"></script>
 </body>
