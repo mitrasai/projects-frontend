@@ -35,3 +35,15 @@ body{
   border: 2px solid #0C0C0C;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px){
+  .rps-container{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .btn{
+    width: 100%;
+    margin: 10px 0;
+  }
+}
