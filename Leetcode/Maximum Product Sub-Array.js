@@ -42,6 +42,8 @@ maxProduct(nums);
 */
 
 // Optimal - 1
+// prefix -> left(0) to right(n-1), suffix -> right(n-1) to left(0)
+// when prefix, suffix encounter zero, immedaitely change the value to 1. cause something multipies zero gives zero itself
 function maxProduct2(nums) {
     let maxi = Number.MIN_SAFE_INTEGER;
     let prefix = 1;
