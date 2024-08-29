@@ -51,12 +51,14 @@ function displayItems() {
 }
 
 function search_box(){
-  let input = document.getElementById('searchbar').value
-  input = input.toLowerCase();
+  let inputElement = document.getElementById('searchbar');
+  let input = inputElement.value.toLowerCase();
   let temp = document.getElementsByClassName('item');
 
   for(let i=0; i<temp.length; i++){
-    if(!temp[i].innerHTML.toLowerCase().includes(input)) temp[i].style.display = "none";
-    else temp[i].style.display = "list-item";
+    if(input.length >= 3 && temp[i].innerHTML.toLowerCase().includes(input)){
+      temp[i].style.display = "list-item";
+    }
+    else temp[i].style.display = "none";
   }
 }
