@@ -49,3 +49,14 @@ function displayItems() {
 
   itemsContainer.innerHTML = innerHTML;
 }
+
+function search_box(){
+  let input = document.getElementById('searchbar').value
+  input = input.toLowerCase();
+  let temp = document.getElementsByClassName('item');
+
+  for(let i=0; i<temp.length; i++){
+    if(!temp[i].innerHTML.toLowerCase().includes(input)) temp[i].style.display = "none";
+    else temp[i].style.display = "list-item";
+  }
+}
